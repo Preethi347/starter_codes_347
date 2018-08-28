@@ -1,0 +1,28 @@
+
+import java.util.*;
+ class Main{
+  public static void main(String args[]){
+   Scanner sc = new Scanner(System.in);
+    int num = sc.nextInt();
+    int[] arr1 = new int[num];
+    for(int i=0;i<num;i++){
+     arr1[i] = s.nextInt(); 
+    }
+    Arrays.sort(arr1);
+    for(int i = arr1[0];i>=2;i--){
+      int flag = 0;
+     for(int j = 0;j<num;j++){
+       if(arr1[j]%i==0){
+        flag = 1;
+       }else{
+       flag = 0;
+         break;
+       }
+     }
+      if(flag==1){
+       System.out.print(i);
+        break;
+      }
+    }
+  }
+ }
